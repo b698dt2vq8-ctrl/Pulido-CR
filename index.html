@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulidos C&R — Transformamos tus pisos</title>
+  <meta name="description" content="Pulido, abrillantado y renovación de superficies con calidad profesional. Pulidos C&R." />
+
+  <!-- ===== FUENTES ===== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- ===== FONT AWESOME (íconos) ===== -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- ===== CSS PRINCIPAL ===== -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+
+  <header class="header" id="header">
+    <div class="header__inner container">
+
+  <!-- ▼ LOGO — Reemplaza el bloque .header__logo-placeholder con:
+       <img src="img/logo.png" alt="Pulidos C&R" class="header__logo-img" />
+  -->
+  <a href="#inicio" class="header__logo">
+    <div class="header__logo-placeholder">
+      <img src="./logo1.svg" alt="logo">
+      <span class="header__logo-text">Pulidos<span class="accent">C&R</span></span>
+    </div>
+  </a>
+
+  <!-- Navegación escritorio -->
+  <nav class="header__nav" id="nav">
+    <ul class="header__nav-list">
+      <li><a href="#inicio"       class="header__nav-link">Inicio</a></li>
+      <li><a href="#servicios"    class="header__nav-link">Servicios</a></li>
+      <li><a href="#galeria"      class="header__nav-link">Galería</a></li>
+      <li><a href="#herramientas" class="header__nav-link">Herramientas</a></li>
+      <li><a href="#contacto"     class="header__nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CTA compacto en header -->
+  <a href="https://wa.me/5353360983?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" class="btn btn--red btn--sm header__cta">
+    <i class="fa-brands fa-whatsapp"></i> Cotizar
+  </a>
+
+  <!-- Hamburger móvil -->
+  <button class="header__hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+
+</div>
+
+  </header>
+
+  <!-- Menú móvil overlay -->
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Cerrar menú">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="mobile-menu__list">
+      <li><a href="#inicio"       class="mobile-menu__link">Inicio</a></li>
+      <li><a href="#servicios"    class="mobile-menu__link">Servicios</a></li>
+      <li><a href="#galeria"      class="mobile-menu__link">Galería</a></li>
+      <li><a href="#herramientas" class="mobile-menu__link">Herramientas</a></li>
+      <li><a href="#contacto"     class="mobile-menu__link">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/5353360983" target="_blank" rel="noopener" class="btn btn--red mobile-menu__cta">
+      <i class="fa-brands fa-whatsapp"></i> Solicitar cotización
+    </a>
+  </div>
+
+  <!-- ============================================================
+       SECCIÓN HERO  (#inicio)
+       ============================================================ -->
+
+  <section class="hero" id="inicio">
+    <!--
+    ════════════════════════════════════════════════
+    IMAGEN DE FONDO DEL HERO
+    Opción A — desde CSS (recomendada):
+      Abre css/styles.css y busca ".hero" y añade:
+        background-image: url('../img/hero-bg.jpg');
+    Opción B — inline aquí mismo:
+      <section class="hero" id="inicio"
+        style="background-image:url('img/TU_IMAGEN.jpg')">
+    ════════════════════════════════════════════════
+    -->
+    <div class="hero__overlay"></div>
+    <div class="hero__diagonal"></div>
+
+<div class="hero__content container">
+  <p class="hero__eyebrow reveal">Servicio profesional de pisos</p>
+  <h1 class="hero__title reveal">
+    Transformamos<br />
+    <span class="accent">tus pisos</span><br />
+    con calidad<br />y experiencia
+  </h1>
+  <p class="hero__subtitle reveal">
+    Pulido &middot; Abrillantado &middot; Cristalizado &middot; Renovación de superficies
+    <br>
+    <br>
+  </p>
+  <div class="hero__actions reveal">
+    <a href="https://wa.me/5353360983?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" class="btn btn--red btn--lg">
+      <i class="fa-brands fa-whatsapp"></i> Solicita tu cotización
+    </a>
+    <a href="#servicios" class="btn btn--outline btn--lg">
+      Ver servicios <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </div>
+</div>
+
+<div class="hero__scroll">
+  <span class="hero__scroll-line"></span>
+  <span class="hero__scroll-text">scroll</span>
+</div>
+
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN SERVICIOS  (#servicios)
+       Instrucciones de imágenes:
+         Antes   → img/s1-antes.jpg … img/s7-antes.jpg
+         Después → img/s1-despues.jpg … img/s7-despues.jpg
+       Solo reemplaza el atributo src de cada <img>.
+       El slider funciona automáticamente.
+       ============================================================ -->
+
+  <section class="section services" id="servicios">
+    <div class="container">
+
+  <div class="section__header reveal">
+    <p class="section__label">Lo que hacemos</p>
+    <h2 class="section__title">Nuestros <span class="accent">Servicios</span></h2>
+    <p class="section__desc">
+      Desliza la barra central para comparar el antes y el después de cada trabajo.
+    </p>
+  </div>
+
+  <div class="services__grid">
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 1
+         Reemplaza src de ambas imágenes:
+           Antes   → img/s1-antes.jpg
+           Después → img/s1-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 1/s1-antes.jpg" alt="Piscina antes de la limpieza" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 1/s1-despues.jpg" alt="Piscina después de la limpieza" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle">
+          <i class="fa-solid fa-arrows-left-right"></i>
+        </div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Limpieza y rejunteo de vasos de piscina</h3>
+        <p class="service-card__desc">Consiste en la limpieza de vaso total de la piscina con la máquina rotatoria y cepillo de fibra de diferentes tipos.</p>
+      </div>
+    </article>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 2
+         Antes   → img/s2-antes.jpg
+         Después → img/s2-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 2/s2-antes.jpg" alt="Cámara fría antes de la limpieza" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 2/s2-despues.jpg" alt="Cámara fría después de la limpieza" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Servicios de limpieza de cámaras frías</h3>
+        <p class="service-card__desc">Pulido de pisos de cámara fría. Superficie lisa, higiénica y resistente. Trabajo en frío sin afectar la operación ni la cadena de temperatura.</p>
+      </div>
+    </article>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 3
+         Antes   → img/s3-antes.jpg
+         Después → img/s3-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 3/s3-antes.jpg" alt="Terraza exterior antes de la limpieza" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 3/s3-despues.jpg" alt="Terraza exterior después de la limpieza" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Limpieza de áreas de exteriores, terrazas, aceras y calles</h3>
+        <p class="service-card__desc">Recuperamos el brillo, eliminamos manchas y protegemos contra el desgaste climático. Superficies renovadas y de fácil limpieza.</p>
+      </div>
+    </article>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 4
+         Antes   → img/s4-antes.jpg
+         Después → img/s4-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 4/s4-antes.jpg" alt="Superficie de madera antes del desbaste" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 4/s4-despues.jpg" alt="Superficie de madera después del desbaste" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Desvaste de superficies de Madera</h3>
+        <p class="service-card__desc">
+            Consiste en el desvaste de la superficie total de la madera, eliminamos capas viejas, rayones y desgastes para dejar la madera lista para barnizar o sellar.
+            Recuperamos su belleza natural con acabado profesional.
+        </p>
+      </div>
+    </article>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 5
+         Antes   → img/s5-antes.jpg
+         Después → img/s5-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 5/s5-antes.jpg" alt="Hormigón antes del pulido" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 5/s5-despues.jpg" alt="Hormigón después del pulido" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Desvaste, Pulido y Brillado de superficies de hormigón - granito - mármol</h3>
+        <p class="service-card__desc">Consiste en el desvaste nivelado y brillado de la superficie, eliminando imperfecciones y recuperando el brillo original con un acabado duradero y sellado protector.</p>
+      </div>
+    </article>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 6
+         Antes   → img/s6-antes.jpg
+         Después → img/s6-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 6/s6-antes.jpg" alt="Encimera de mármol antes del pulido" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 6/s6-despues.jpg" alt="Encimera de mármol después del pulido" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Desbaste, Pulido y Brillado de encimeras y mecetas de mármol y granito</h3>
+        <p class="service-card__desc">Eliminamos rayones, manchas y desgaste para recuperar el brillo original con acabado uniforme. Superficies renovadas con máxima elegancia.</p>
+      </div>
+    </article>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICIO 7
+         Antes   → img/s7-antes.jpg
+         Después → img/s7-despues.jpg
+    ══════════════════════════════════════════ -->
+    <article class="service-card reveal">
+      <div class="service-card__compare">
+        <div class="service-card__before">
+          <img src="./images/servicio 7/s7-antes.jpg" alt="Superficie antes del brillado" loading="lazy" />
+          <span class="service-card__label before-tag">Antes</span>
+        </div>
+        <div class="service-card__after">
+          <img src="./images/servicio 7/s7-despues.jpg" alt="Superficie después del brillado" loading="lazy" />
+          <span class="service-card__label after-tag">Después</span>
+        </div>
+        <div class="service-card__divider"></div>
+        <div class="service-card__handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+      </div>
+      <div class="service-card__body">
+        <h3 class="service-card__name">Brillado de todo tipo de superficies</h3>
+        <p class="service-card__desc">Consiste en la limpieza y brillado de cualquier superficie ya pulida.</p>
+      </div>
+    </article>
+
+  </div><!-- /services__grid -->
+</div><!-- /container -->
+
+  </section>
+  <!-- FIN SECCIÓN SERVICIOS -->
+
+  <!-- ============================================================
+       SECCIÓN VIDEO BANNER
+       Ubica tu archivo de video en: ./video/banner.mp4
+       También puedes usar .webm para mejor compresión:
+         <source src="./video/banner.webm" type="video/webm" />
+         <source src="./video/banner.mp4"  type="video/mp4"  />
+       ============================================================ -->
+
+  <section class="video-banner" aria-label="Video de trabajo en acción">
+    <video
+      class="video-banner__video"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+    >
+      <!-- ▼ Reemplaza src con la ruta a tu video -->
+      <source src="./video/banner.mp4" type="video/mp4" />
+    </video>
+    <div class="video-banner__overlay"></div>
+    <div class="video-banner__content">
+      <p class="video-banner__label reveal">En cada superficie</p>
+      <h2 class="video-banner__title reveal">
+        Precisión que<br /><span class="accent">se nota.</span>
+      </h2>
+    </div>
+    <img src="./logo1.svg" alt="Pulidos C&R" class="video-banner__logo" />
+  </section>
+  <!-- FIN SECCIÓN VIDEO BANNER -->
+
+  <!-- ============================================================
+       SECCIÓN GALERÍA  (#galeria)
+       CORRECCIÓN: movida fuera de #servicios como sección propia.
+       Se añadió id="galeria" para que el nav pueda enlazarla.
+       Alt texts descriptivos en cada imagen.
+       ============================================================ -->
+
+  <section id="galeria" class="gallery">
+    <h2>Galería de experiencias</h2>
+    <div class="gallery-slider">
+      <div class="gallery-track">
+        <div class="gallery-slide"><img src="./images/gallery/imagen-1.jpeg" alt="Pulido de escalera-1" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/gallery/imagen-2.jpeg" alt="Pulido de escalera-2" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/gallery/imagen-3.jpeg" alt="Pulido de escalera-3" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 3/s3-antes.jpg" alt="Terraza exterior antes de la limpieza" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 3/s3-despues.jpg" alt="Terraza exterior después de la limpieza" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 4/s4-antes.jpg" alt="Madera antes del desbaste" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 4/s4-despues.jpg" alt="Madera después del desbaste" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 5/s5-antes.jpg" alt="Hormigón antes del pulido" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 5/s5-despues.jpg" alt="Hormigón después del pulido" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 6/s6-antes.jpg" alt="Encimera de mármol antes del pulido" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 6/s6-despues.jpg" alt="Encimera de mármol después del pulido" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 7/s7-antes.jpg" alt="Superficie antes del brillado" loading="lazy"></div>
+        <div class="gallery-slide"><img src="./images/servicio 7/s7-despues.jpg" alt="Superficie después del brillado" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+  <!-- FIN SECCIÓN GALERÍA -->
+
+  <!-- ============================================================
+       SECCIÓN HERRAMIENTAS  (#herramientas)
+       Imágenes → img/h1.jpg … img/h14.jpg
+       Reemplaza el atributo src de cada <img>.
+       ============================================================ -->
+
+  <section class="section tools" id="herramientas">
+    <div class="container">
+
+  <div class="section__header reveal">
+    <p class="section__label">Equipamiento</p>
+    <h2 class="section__title">Herramientas <span class="accent">Profesionales</span></h2>
+    <p class="section__desc">Maquinaria y abrasivos de alto rendimiento para garantizar resultados superiores.</p>
+  </div>
+
+  <div class="tools__grid">
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="images/herramientas/h-1.jpg" alt="Pulidora industrial" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Pulidora Industrial</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-2.jpg" alt="Equipo de limpieza de alta presión" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Equipo de limpieza de alta presión</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-3.jpg" alt="Aspiradora industrial" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Aspiradora industrial</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-4.jpg" alt="Pulidora de mano" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Pulidora de mano</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-5.jpg" alt="Lana de acero" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Lana de acero tipo 1 y 2</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-6.jpg" alt="Cepillos" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Cepillos</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-7.jpg" alt="Discos diamantados" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Discos diamantados</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-8.jpg" alt="Esponjas suaves y muy suaves" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Esponjas suaves y muy suaves</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap" style="aspect-ratio: unset; height: 200px;">
+        <img src="./images/herramientas/h-9.jpg" alt="Lija para madera" style="object-fit: contain; background: #111; width: 100%; height: 100%;" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Lija para madera</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap" style="aspect-ratio: unset; height: 200px;">
+        <img src="./images/herramientas/h-10.jpg" alt="Esponjas, talochas y estropajos" style="object-fit: contain; background: #111; width: 100%; height: 100%;" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Esponjas, talochas y estropajos</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-11.jpg" alt="RC-30 Limpiador neutro" loading="lazy" />
+      </div>
+      <p class="tool-card__name">RC-30 Limpiador neutro</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-12.jpg" alt="Cera líquida" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Cera líquida</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-13.jpg" alt="Cristalizador" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Cristalizador</p>
+    </div>
+
+    <div class="tool-card reveal">
+      <div class="tool-card__img-wrap">
+        <img src="./images/herramientas/h-14.jpg" alt="Pasta para junta" loading="lazy" />
+      </div>
+      <p class="tool-card__name">Pasta para junta</p>
+    </div>
+
+  </div><!-- /tools__grid -->
+</div><!-- /container -->
+
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN CONTACTO  (#contacto)
+       ============================================================ -->
+
+  <section class="section contact" id="contacto">
+    <div class="container">
+
+  <div class="section__header reveal">
+    <p class="section__label">Estamos para servirte</p>
+    <h2 class="section__title"><span class="accent">Contáctanos</span></h2>
+    <p class="section__desc">Escríbenos directamente por WhatsApp o síguenos en redes sociales.</p>
+  </div>
+
+  <div class="contact__body">
+
+    <!-- Tarjetas de WhatsApp -->
+    <div class="contact__phones reveal">
+      <a href="https://wa.me/5353360983?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" class="contact__phone-card">
+        <span class="contact__phone-icon"><i class="fa-brands fa-whatsapp"></i></span>
+        <div class="contact__phone-info">
+          <span class="contact__phone-label">WhatsApp</span>
+          <span class="contact__phone-number">53360983</span>
+        </div>
+      </a>
+      <a href="https://wa.me/5358036211?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" class="contact__phone-card">
+        <span class="contact__phone-icon"><i class="fa-brands fa-whatsapp"></i></span>
+        <div class="contact__phone-info">
+          <span class="contact__phone-label">WhatsApp</span>
+          <span class="contact__phone-number">58036211</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="contact__social reveal">
+      <p class="contact__social-title">Síguenos en redes</p>
+      <div class="contact__social-links">
+        <a href="https://www.facebook.com/share/1CKrHNNztT/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-btn social-btn--fb">
+          <i class="fa-brands fa-facebook-f"></i><span>Facebook</span>
+        </a>
+        <!-- ▼ Reemplaza [URL_Instagram] con tu enlace real -->
+        <a href="[URL_Instagram]" target="_blank" rel="noopener" class="social-btn social-btn--ig">
+          <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a href="https://wa.me/5353360983?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" class="social-btn social-btn--wa">
+          <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA final -->
+    <div class="contact__cta reveal">
+      <p>¿Listo para transformar tus pisos?</p>
+      <a href="https://wa.me/5353360983?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" class="btn btn--red btn--lg">
+        <i class="fa-brands fa-whatsapp"></i> Solicitar cotización ahora
+      </a>
+    </div>
+
+  </div><!-- /contact__body -->
+</div><!-- /container -->
+
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Pulidos<span class="accent">C&R</span></span>
+      <p class="footer__copy">&copy; <span id="year"></span> Pulidos C&R. Todos los derechos reservados.</p>
+      <div class="footer__links">
+        <a href="https://wa.me/5353360983?text=Hola,%20me%20pongo%20en%20contacto%20para%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20pulido%20y%20renovaci%C3%B3n%20de%20superficies.%20%C2%BFPodr%C3%ADa%20indicarme%20disponibilidad%20y%20precios" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/share/1CKrHNNztT/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <!-- ▼ Reemplaza [URL_Instagram] con tu enlace real -->
+        <a href="[URL_Instagram]" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para ver imagen en pantalla completa -->
+  <div class="image-fullscreen-modal" id="fullscreenModal">
+    <span class="fullscreen-close" aria-label="Cerrar imagen">&times;</span>
+    <img class="fullscreen-image" src="" alt="Vista ampliada">
+    <button class="fullscreen-nav prev" aria-label="Imagen anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="fullscreen-nav next" aria-label="Imagen siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- ===== JAVASCRIPT PRINCIPAL ===== -->
+
+  <script src="main.js"></script>
+
+</body>
+</html>
